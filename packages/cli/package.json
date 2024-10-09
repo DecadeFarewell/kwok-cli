@@ -1,0 +1,20 @@
+{
+  "name": "@kwok/cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "babel": "npx babel src --out-dir lib"
+  },
+  "bin": {
+    "kwok-dev": "./bin/kwok-dev.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.25.7",
+    "@babel/core": "^7.25.7",
+    "@babel/preset-env": "^7.25.7",
+    "@babel/register": "^7.25.7"
+  }
+}

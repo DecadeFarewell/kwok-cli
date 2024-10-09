@@ -1,0 +1,26 @@
+{
+  "name": "kwok-cli-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "dev": "kwok-dev"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DecadeFarewell/kwok-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DecadeFarewell/kwok-cli/issues"
+  },
+  "homepage": "https://github.com/DecadeFarewell/kwok-cli#readme",
+  "dependencies": {
+    "@kwok/cli": "1.0.0",
+    "express": "^5.0.0-beta.2"
+  }
+}
