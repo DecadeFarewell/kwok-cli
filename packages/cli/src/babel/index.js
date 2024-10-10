@@ -5,6 +5,10 @@ function registerBabel() {
   });
 }
 
-module.exports = {
+// module.exports = {
+//   registerBabel
+// }
+
+export {
   registerBabel
 }

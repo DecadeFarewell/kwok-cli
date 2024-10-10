@@ -1,6 +1,7 @@
-// export { registerBabel } from './babel'
-const { registerBabel } = require('./babel')
+// const { registerBabel } = require('./babel')
 
-module.exports = {
-  registerBabel
-}
+// module.exports = {
+//   registerBabel
+// }
+
+export { registerBabel } from './babel'

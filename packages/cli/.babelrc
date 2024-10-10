@@ -1,0 +1,16 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current" // 目标为当前 Node.js 版本
+        },
+        // "sourceMaps": "both", // dev 调试用
+        // "cache": false,
+        // "extensions": [".ts", ".js", ".mjs", ".cjs", ".tsx", ".jsx"],
+        "modules": "commonjs" // 输出 CommonJS 模块
+      }
+    ]
+  ]
+}
