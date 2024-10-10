@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","names":["_babel","require"],"sources":["../src/index.js"],"sourcesContent":["// const { registerBabel } = require('./babel')\n\n// module.exports = {\n//   registerBabel\n// }\n\nexport { registerBabel } from './babel'"],"mappings":";;;;;;;;;;;AAMA,IAAAA,MAAA,GAAAC,OAAA","ignoreList":[]}
