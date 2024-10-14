@@ -1,8 +1,11 @@
-import createApp from "./createApp"
+import { createApp } from '@kwok/runtime'
 
 const app = createApp()
 
-app.listen(9000, () => {
-  console.log('app start at 9000');
-
+app.use('/ping', (req, res) => {
+  res.json({
+    data: 'hello kwok'
+  })
 })
+
+app.listen()
