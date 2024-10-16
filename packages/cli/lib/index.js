@@ -3,6 +3,12 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+Object.defineProperty(exports, "devCompiler", {
+  enumerable: true,
+  get: function () {
+    return _webpack.devCompiler;
+  }
+});
 Object.defineProperty(exports, "registerBabel", {
   enumerable: true,
   get: function () {
@@ -10,4 +16,5 @@ Object.defineProperty(exports, "registerBabel", {
   }
 });
 var _babel = require("./babel");
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfYmFiZWwiLCJyZXF1aXJlIl0sInNvdXJjZXMiOlsiLi4vc3JjL2luZGV4LmpzIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCB7IHJlZ2lzdGVyQmFiZWwgfSBmcm9tICcuL2JhYmVsJyJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQSxJQUFBQSxNQUFBLEdBQUFDLE9BQUEiLCJpZ25vcmVMaXN0IjpbXX0=
+var _webpack = require("./webpack");
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfYmFiZWwiLCJyZXF1aXJlIiwiX3dlYnBhY2siXSwic291cmNlcyI6WyIuLi9zcmMvaW5kZXguanMiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IHsgcmVnaXN0ZXJCYWJlbCB9IGZyb20gJy4vYmFiZWwnXG5leHBvcnQgeyBkZXZDb21waWxlciB9IGZyb20gJy4vd2VicGFjayciXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsSUFBQUEsTUFBQSxHQUFBQyxPQUFBO0FBQ0EsSUFBQUMsUUFBQSxHQUFBRCxPQUFBIiwiaWdub3JlTGlzdCI6W119
