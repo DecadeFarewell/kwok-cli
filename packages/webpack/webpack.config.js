@@ -1,9 +1,69 @@
-const path = require('path');
+const path = require("path");
+const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: './src/index.js',
+  mode: "development",
+
+  entry: ["webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000", "./src/index.js"],
+  devtool: "inline-source-map",
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+
+    // 提取css为单独文件
+    new MiniCssExtractPlugin({
+      ignoreOrder: true,
+    }),
+
+    new HtmlWebpackPlugin({
+      title: "Hot Module Replacement",
+    }),
+    // manifest
+    new WebpackManifestPlugin({
+      fileName: "manifest.json", // 生成的 manifest 文件名称
+      publicPath: "/dist/", // 静态资源的公共路径
+    }),
+    // 启用热更新
+  ],
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    clean: true,
+    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/, // 处理 .js 文件
+        exclude: /node_modules/, // 排除 node_modules 目录
+        use: {
+          loader: "babel-loader", // 使用 babel-loader
+          options: {
+            presets: [
+              ["@babel/preset-env"],
+            ],
+          },
+        },
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              esModule: true,
+            },
+          },
+          "css-loader",
+          "postcss-loader",
+        ],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+    ],
   },
 };
