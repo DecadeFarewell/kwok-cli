@@ -1,11 +1,15 @@
+const path = require('path')
 const express = require('express');
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require("webpack-hot-middleware")
 
-const app = express();
 const config = require('./webpack.config.js');
 const compiler = webpack(config);
+
+const app = express();
+
+app.use(express.static(path.resolve(__dirname, 'dist')))
 
 // 告知 express 使用 webpack-dev-middleware，
 // 以及将 webpack.config.js 配置文件作为基础配置。

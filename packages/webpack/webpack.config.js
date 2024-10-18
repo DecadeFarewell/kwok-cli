@@ -7,7 +7,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   mode: "development",
 
-  entry: ["webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000", "./src/index.js"],
+  entry: ["webpack-hot-middleware/client?noInfo=true&reload=true", "./src/index.js"],
   devtool: "inline-source-map",
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -18,7 +18,8 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      title: "Hot Module Replacement",
+      title: "kwok's webpack-cli",
+      template: path.resolve(__dirname, "./src/index.html"),
     }),
     // manifest
     new WebpackManifestPlugin({
