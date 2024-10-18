@@ -8,7 +8,7 @@ import './style.css'
 
    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
-  btn.innerHTML = 'Click me 1';
+  btn.innerHTML = 'Click me 123456';
   btn.onclick = printMe;
 
   element.appendChild(btn);
