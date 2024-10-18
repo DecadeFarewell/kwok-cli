@@ -1,6 +1,7 @@
 import path from 'path'
 import webpack from "webpack";
-// import { cwdPath, outputPath } from "@kwok/utils";
+// FIXME: 为什么这里的导入会报错不允许使用import，难道是因为是在webpack配置文件的原因
+import { cwdPath, outputPath } from "@kwok/utils";
 
 const handler = (percentage, message, ...args) => {
   // e.g. Output each progress message directly to the console:
