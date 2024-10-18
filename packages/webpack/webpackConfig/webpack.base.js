@@ -24,7 +24,8 @@ function handler(percentage, ...args) {
 
 module.exports = {
   mode: "development",
-  devtool: "inline-source-map",
+  // https://webpack.docschina.org/guides/build-performance/#devtool
+  devtool: "eval-cheap-module-source-map",
 
   plugins: [
     // 进度

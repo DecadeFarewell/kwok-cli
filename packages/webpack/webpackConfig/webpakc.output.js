@@ -6,5 +6,6 @@ module.exports = {
     filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, "../dist"),
     publicPath: "/",
+    pathinfo: false // 输出的bundle中不显示原文件的路径信息
   },
 };
