@@ -4,6 +4,7 @@
   "another.js": "/dist/another.bundle.js",
   "runtime.js": "/dist/runtime.bundle.js",
   "src_a_js.bundle.js": "/dist/src_a_js.bundle.js",
+  "vendors-node_modules_lodash_lodash_js.bundle.js": "/dist/vendors-node_modules_lodash_lodash_js.bundle.js",
   "sunset.jpeg": "/dist/1ee722085451d3989d70.jpeg",
   "index.html": "/dist/index.html"
 }
