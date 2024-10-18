@@ -7,6 +7,5 @@ const optimization = require('./webpackConfig/webpack.optimization')
 const output = require('./webpackConfig/webpakc.output.js')
 
 const config = merge(entry, base, plugin, loader, optimization, output)
-console.log('config: ', config);
 
 module.exports = config;
