@@ -6,6 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   plugins: [
+    // 启用热更新
     new webpack.HotModuleReplacementPlugin(),
 
     // 提取css为单独文件
@@ -23,6 +24,5 @@ module.exports = {
       fileName: "manifest.json", // 生成的 manifest 文件名称
       publicPath: "/dist/", // 静态资源的公共路径
     }),
-    // 启用热更新
   ],
 }
