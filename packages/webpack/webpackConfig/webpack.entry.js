@@ -1,14 +1,13 @@
 module.exports = {
   // webpack-hot-middleware config  https://github.com/webpack-contrib/webpack-hot-middleware#Config
-  // entry: {
-  //   main: ["webpack-hot-middleware/client?reload=true", "./src/index.js"],
-  //   another: "./src/another-module.js",
-  // }
-
   entry: {
-    main: "./src/index.js",
-    another: "./src/another-module.js",
-  },
+    main: ["webpack-hot-middleware/client?reload=true", "./src/main.js"],
+  }
+
+  // entry: {
+  //   index: "./src/index.js",
+  //   another: "./src/another-module.js",
+  // },
 
   // entry: {
   //   index: {
