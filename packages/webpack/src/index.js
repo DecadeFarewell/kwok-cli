@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import printMe from './print.js';
 import './style.css'
+import { square, cube } from './math.js'
 
  function component() {
    const element = document.createElement('div');

@@ -1,10 +1,16 @@
 {
   "main.css": "/dist/main.css",
-  "main.js": "/dist/main.d66bd245b03824553091.js",
-  "another.js": "/dist/another.84626174298ec05cf6b5.js",
-  "runtime.js": "/dist/runtime.97347607763660780fe1.js",
-  "src_a_js.js": "/dist/src_a_js.9399385e8924cf70543e.js",
-  "vendors.js": "/dist/vendors.a1a4785d186bf7f5a4ba.js",
+  "main.js": "/dist/main.01d1632efdb645d1c8cf.js",
+  "another.js": "/dist/another.a50c1f899e7c922e790e.js",
+  "runtime.js": "/dist/runtime.ce88fc8574df4a5c550d.js",
+  "678.js": "/dist/678.216f2886594a014cabcb.js",
+  "vendors.js": "/dist/vendors.d19484863cc93b7e147e.js",
   "sunset.jpeg": "/dist/1ee722085451d3989d70.jpeg",
-  "index.html": "/dist/index.html"
+  "index.html": "/dist/index.html",
+  "main.css.map": "/dist/main.css.map",
+  "main.js.map": "/dist/main.01d1632efdb645d1c8cf.js.map",
+  "another.js.map": "/dist/another.a50c1f899e7c922e790e.js.map",
+  "runtime.js.map": "/dist/runtime.ce88fc8574df4a5c550d.js.map",
+  "678.js.map": "/dist/678.216f2886594a014cabcb.js.map",
+  "vendors.js.map": "/dist/vendors.d19484863cc93b7e147e.js.map"
 }

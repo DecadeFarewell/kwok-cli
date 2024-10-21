@@ -1,0 +1,1 @@
+{"version":3,"file":"another.a50c1f899e7c922e790e.js","mappings":";kIAEAA,QAAQC,IAAIC,IAAAA,KAAO,CAAC,UAAW,SAAU,WAAY","sources":["webpack://@kwok/webpack/./src/another-module.js"],"sourcesContent":["import _ from 'lodash';\n\nconsole.log(_.join(['Another', 'module', 'loaded!'], ' '));"],"names":["console","log","_"],"sourceRoot":""}

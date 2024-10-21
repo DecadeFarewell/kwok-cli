@@ -23,9 +23,15 @@ function handler(percentage, ...args) {
 }
 
 module.exports = {
-  mode: "development",
+  // mode: "development",
+  mode: "production",
+
   // https://webpack.docschina.org/guides/build-performance/#devtool
-  devtool: "eval-cheap-module-source-map",
+  // devtool: "eval-cheap-module-source-map",
+
+  // 如果开启treeShaking,devtool不支持eval-cheap-module-source-map选项
+  // // https://webpack.docschina.org/plugins/terser-webpack-plugin/#note-about-source-maps
+  devtool: 'source-map', 
 
   plugins: [
     // 进度

@@ -1,3 +1,6 @@
+/*!*******************************************************************************************************************!*\
+  !*** css ../../node_modules/css-loader/dist/cjs.js!../../node_modules/postcss-loader/dist/cjs.js!./src/style.css ***!
+  \*******************************************************************************************************************/
 body {
   background: lightcyan;
 }
@@ -14,3 +17,5 @@ img {
   height: 400px;
   object-fit: contain;
 }
+
+/*# sourceMappingURL=main.css.map*/
