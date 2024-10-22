@@ -23,8 +23,8 @@ function handler(percentage, ...args) {
 }
 
 module.exports = {
-  // mode: "development",
-  mode: "production",
+  mode: "development",
+  // mode: "production",
 
   // https://webpack.docschina.org/guides/build-performance/#devtool
   // devtool: "eval-cheap-module-source-map",

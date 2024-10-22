@@ -1,4 +1,5 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { default: loader } = require("vue-loader");
 
 module.exports = {
   module: {
@@ -14,7 +15,7 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
+        test: /\.(scss|sass|css)$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -24,6 +25,21 @@ module.exports = {
           },
           "css-loader",
           "postcss-loader",
+          "sass-loader",
+        ],
+      },
+      {
+        test: /\.less$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              esModule: true,
+            },
+          },
+          "css-loader",
+          "postcss-loader",
+          "less-loader",
         ],
       },
       {
