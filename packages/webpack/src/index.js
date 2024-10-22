@@ -1,6 +1,5 @@
 import _ from 'lodash';
-import printMe from './print.js';
-import './style.css'
+import './assets/styles/style.css'
 import { square, cube } from './math.js'
 
  function component() {
@@ -10,7 +9,9 @@ import { square, cube } from './math.js'
    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
   btn.innerHTML = 'Click me 123456';
-  btn.onclick = printMe;
+  btn.onclick = () => {
+    console.log('onclick: ', 123);
+  };
 
   element.appendChild(btn);
 

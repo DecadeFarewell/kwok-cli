@@ -5,14 +5,14 @@
 
   <Todo />
 
-  <h3>{{ acount }}</h3>
+  <h3>{{ count }}</h3>
 
   <button @click="onAdd">add +</button>
 </template>
 
 <script setup>
 import { ref } from "vue";
-import BaseSvg from "@/assets/base.svg";
+import BaseSvg from "@/assets/image/base.svg";
 import Todo from "@/components/Todo.vue";
 import { add } from "@/utils/math";
 

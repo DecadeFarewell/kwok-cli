@@ -1,24 +1,32 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { default: loader } = require("vue-loader");
 
 module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/, // 处理 .js 文件
+        test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/, // 排除 node_modules 目录
         use: {
           loader: "babel-loader", // 使用 babel-loader
           options: {
-            presets: [["@babel/preset-env"]],
+            babelrc: false,
+            presets: [
+              // 允许使用最新的 JavaScript 特性 && 不将 ES6 模块转换为 CommonJS
+              ["@babel/preset-env"],
+              // typescript
+              [
+                "@babel/preset-typescript",
+                { isTSX: true, allExtensions: true },
+              ],
+            ]
           },
         },
       },
-      {
-        test: /\.(ts|tsx)?$/,
-        exclude: /node_modules/,
-        use: "ts-loader",
-      },
+      // {
+      //   test: /\.(ts|tsx)?$/,
+      //   exclude: /node_modules/,
+      //   use: "ts-loader",
+      // },
       {
         test: /\.(scss|sass|css)$/,
         use: [
