@@ -12,13 +12,18 @@
 
 <script setup>
 import { ref } from "vue";
-import BaseSvg from "@/assets/base.svg"
-import Todo from '@/components/Todo.vue'
+import BaseSvg from "@/assets/base.svg";
+import Todo from "@/components/Todo.vue";
+import { add } from "@/utils/math";
 
 const count = ref(1);
 
 // todo: 为什么报错不会抛出？？
-const add = () => count.value++;
+const onAdd = () => {
+  count.value++;
+  const res = add(1, 3);
+  console.log("res: ", res);
+};
 </script>
 
 <style scoped lang="scss">

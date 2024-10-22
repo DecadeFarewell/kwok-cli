@@ -1,7 +1,7 @@
 module.exports = {
   // webpack-hot-middleware config  https://github.com/webpack-contrib/webpack-hot-middleware#Config
   entry: {
-    main: ["webpack-hot-middleware/client?reload=true", "./src/main.js"],
+    main: ["webpack-hot-middleware/client?reload=true", "./src/main.ts"],
   }
 
   // entry: {

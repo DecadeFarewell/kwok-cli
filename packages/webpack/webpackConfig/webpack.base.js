@@ -1,5 +1,5 @@
 const webpack = require("webpack");
-const path = require('path')
+const path = require("path");
 const cliProgress = require("cli-progress");
 
 const cliProgressBar = new cliProgress.Bar(
@@ -36,8 +36,20 @@ module.exports = {
 
   resolve: {
     alias: {
-      "@": path.resolve("src")
+      "@": path.resolve("src"),
     },
+    // 尝试按顺序解析这些扩展。如果多个文件共享相同的名称但具有不同的扩展名，webpack 将解析扩展名在数组中列在第一位的文件并跳过其余部分。
+    extensions: [
+      ".js",
+      ".ts",
+      ".mjs",
+      ".cjs",
+      ".tsx",
+      ".jsx",
+      ".json",
+      ".wasm",
+      ".vue",
+    ],
   },
 
   plugins: [

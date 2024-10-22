@@ -1,0 +1,11 @@
+{
+  "main.css": "/dist/main.css",
+  "main.js": "/dist/main.289e35f8bc25b29710ac.js",
+  "runtime.js": "/dist/runtime.0343886e0edaaf616dc1.js",
+  "vendors.js": "/dist/vendors.baa634fa4b627d414c2e.js",
+  "index.html": "/dist/index.html",
+  "main.css.map": "/dist/main.css.map",
+  "main.js.map": "/dist/main.289e35f8bc25b29710ac.js.map",
+  "runtime.js.map": "/dist/runtime.0343886e0edaaf616dc1.js.map",
+  "vendors.js.map": "/dist/vendors.baa634fa4b627d414c2e.js.map"
+}
