@@ -4,8 +4,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx|ts|tsx)$/,
-        exclude: /node_modules/, // 排除 node_modules 目录
+        test: /\.(js|ts|mjs|cjs|jsx|tsx)$/,
+        // exclude: /node_modules/, // 排除 node_modules 目录
+        exclude: /core-js/,
         use: {
           loader: "babel-loader", // 使用 babel-loader
           options: {
@@ -18,15 +19,10 @@ module.exports = {
                 "@babel/preset-typescript",
                 { isTSX: true, allExtensions: true },
               ],
-            ]
+            ],
           },
         },
       },
-      // {
-      //   test: /\.(ts|tsx)?$/,
-      //   exclude: /node_modules/,
-      //   use: "ts-loader",
-      // },
       {
         test: /\.(scss|sass|css)$/,
         use: [
@@ -60,5 +56,5 @@ module.exports = {
         type: "asset/resource",
       },
     ],
-  },
+  }
 };
