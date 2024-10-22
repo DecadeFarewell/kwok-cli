@@ -1,5 +1,6 @@
 const webpack = require("webpack");
-const cliProgress = require('cli-progress')
+const path = require('path')
+const cliProgress = require("cli-progress");
 
 const cliProgressBar = new cliProgress.Bar(
   {
@@ -31,7 +32,13 @@ module.exports = {
 
   // 如果开启treeShaking,devtool不支持eval-cheap-module-source-map选项
   // // https://webpack.docschina.org/plugins/terser-webpack-plugin/#note-about-source-maps
-  devtool: 'source-map', 
+  devtool: "source-map",
+
+  resolve: {
+    alias: {
+      "@": path.resolve("src")
+    },
+  },
 
   plugins: [
     // 进度

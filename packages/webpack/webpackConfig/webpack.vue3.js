@@ -2,7 +2,10 @@ const { VueLoaderPlugin } = require("vue-loader");
 
 module.exports = {
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    require('unplugin-vue-setup-extend-plus/webpack').default({
+      /* options */
+    })
   ],
   module: {
     rules: [
@@ -24,7 +27,6 @@ module.exports = {
         oneOf: [
           {
             // svg vue 组件化
-            resourceQuery: /vue/, // demo.svg?vue
             use: ["vue-loader", "vue-svg-loader"],
           },
           {
