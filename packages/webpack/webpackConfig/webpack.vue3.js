@@ -2,12 +2,7 @@ const { VueLoaderPlugin } = require("vue-loader");
 
 module.exports = {
   plugins: [
-    new VueLoaderPlugin(),
-
-    // 支持setup语法糖 https://www.npmjs.com/package/unplugin-vue-setup-extend-plus
-    // require("unplugin-vue-setup-extend-plus/webpack").default({
-    //   /* options */
-    // }),
+    new VueLoaderPlugin()
   ],
   module: {
     rules: [
@@ -25,10 +20,11 @@ module.exports = {
       },
       {
         test: /\.svg$/, // svg的vue组件化
+        // 当规则匹配时，只使用第一个匹配规则。
         oneOf: [
           {
             // svg vue 组件化
-            resourceQuery: /vue/,
+            resourceQuery: /vue/, // demo.svg?vue
             use: ["vue-loader", "vue-svg-loader"],
           },
           {
