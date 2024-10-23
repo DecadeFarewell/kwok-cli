@@ -1,6 +1,9 @@
 import path from 'path'
 import { v4 as uuidv4 } from "uuid";
 
+export const pathItem =
+  process.env.NODE_ENV === "development" ? "development" : "production";
+
 // 获取package.json对象
 export const pkg = require(path.resolve('./package.json'));
 
@@ -23,3 +26,10 @@ export const publicPath = `/${basePath}/`;
 
 // 静态资源输出文件路径
 export const outputPath =  `/${basePath}/`;
+
+// manifest输出路径
+export const outputManifestPath = path.resolve(
+  "manifest",
+  pathItem,
+  "manifest.json"
+);

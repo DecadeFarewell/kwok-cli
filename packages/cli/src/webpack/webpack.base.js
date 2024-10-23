@@ -1,7 +1,6 @@
-import path from 'path'
 import webpack from "webpack";
 import cliProgress from 'cli-progress';
-import { cwdPath, outputPath } from "@kwok/utils";
+import { cwdPath } from "@kwok/utils";
 
 const cliProgressBar = new cliProgress.Bar(
   {
@@ -26,14 +25,7 @@ function handler(percentage, ...args) {
 
 export default {
   mode: process.env.NODE_ENV === "development" ? "development" : "production",
-  context: cwdPath,
-  context: process.cwd(),
   entry: './src/client/index.js',
-  output: {
-    filename: 'bundle.js',
-    path: outputPath,
-    clean: true, // 每次构建前清空 output.path 指定的文件夹内容
-  },
   module: {
     rules: [
       {
@@ -46,6 +38,12 @@ export default {
     ],
   },
   plugins: [
+    // 忽略第三方包指定目录，让这些目录不要被打包进去。
+    // 打包时忽略momemt这个包中xxx/locale/ 目录下的所有内容
+    new webpack.IgnorePlugin({
+      resourceRegExp: /^\.\/locale$/,
+      contextRegExp: /moment$/,
+    }),
     // 进度
     new webpack.ProgressPlugin(handler),
   ],
