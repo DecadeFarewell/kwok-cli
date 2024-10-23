@@ -1,12 +1,9 @@
-import _ from "lodash";
+import { createApp } from 'vue';
+import App from './App.vue';
+// import ElementPlus from 'element-plus'
+// import 'element-plus/dist/index.css'
 
-function component() {
-  const element = document.createElement("div");
+const app = createApp(App)
 
-  // lodash 现在使用 import 引入
-  element.innerHTML = _.join(["Hello", "webpack"], " ");
-
-  return element;
-}
-
-document.body.appendChild(component());
+// app.use(ElementPlus)
+app.mount('#app');

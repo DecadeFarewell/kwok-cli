@@ -1,3 +1,4 @@
+import webpack from 'webpack'
 import { babelOptionWebpack } from '../babel'
 
 module.exports = {

@@ -2,13 +2,20 @@
   "name": "@kwok/vue3",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vue-loader": "^17.4.2"
+    "@vue/babel-plugin-jsx": "^1.2.5",
+    "unplugin-vue-setup-extend-plus": "^1.0.1",
+    "vue-loader": "^17.4.2",
+    "vue-svg-loader": "^0.16.0"
+  },
+  "peerDependencies": {
+    "vue": ">=3.2.31",
+    "vue-router": ">=4.0.13"
   }
 }

@@ -14,25 +14,25 @@ export function registerBabel() {
 function getFrameWorkConfig() {
   let config = {};
 
-  try {
-    const { babelConfig } = require("@fdd/vue2.7");
+  // try {
+  //   const { babelConfig } = require("@kwok/vue2.7");
 
-    config = babelConfig();
-  } catch (error) {}
+  //   config = babelConfig();
+  // } catch (error) {}
 
   try {
-    const { babelConfig } = require("@fdd/vue3");
+    const { babelConfig } = require("@kwok/vue3");
 
     config = babelConfig();
   } catch (error) {}
 
   if(Object.keys(config).length === 0) { 
-    console.log('Cannot find module "@fdd/vue3" or "@fdd/vue2" in package.json')
+    console.log('Cannot find module "@kwok/vue3" in package.json')
   }
 
   return config;
 }
 
 export function babelOptionWebpack() {
-  return merge(configBase, configImport)
+  return merge(configBase, getFrameWorkConfig(), configImport)
 }
