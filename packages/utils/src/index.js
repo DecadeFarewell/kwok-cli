@@ -55,3 +55,8 @@ export const outputManifestPath = path.resolve(
   pathItem,
   "manifest.json"
 );
+
+// manifest导入
+export function requireManifest(packagePath) {
+  return require(`${packagePath}/manifest/${pathItem}/manifest.json`);
+}

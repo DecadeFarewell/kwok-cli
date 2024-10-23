@@ -19,6 +19,8 @@ export default {
       integrity: true, // 输出资源hash值
       integrityHashes: ["sha384"], // 需要 webpack-subresource-integrity 配合
       publicPath, // 打包资源输出目录
+      entrypoints: true,
+      entrypointsUseAssets: true,
       done(manifest) {
         console.info(
           `The manifest has been written to ${manifest.getOutputPath()}`
