@@ -24,7 +24,9 @@ export function requireWebpackConfig() {
     return interopRequireDefault(require(path.resolve(webpackConfigPath)));
   }
 
-  return {};
+  return {
+    default: {}
+  };
 }
 
 // 当前工作目录的绝对路径

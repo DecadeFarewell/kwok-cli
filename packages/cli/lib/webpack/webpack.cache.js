@@ -1,0 +1,14 @@
+"use strict";
+
+module.exports = {
+  cache: {
+    // string: 'memory' | 'filesystem'
+    // 配置哪种类型取决于项目规模，memory对于·规模小的项目·或者在·开发阶段·有优势
+    type: "filesystem",
+    buildDependencies: {
+      // 当Webpack 配置文件发生变化时，使缓存会失效，Webpack重新构建
+      config: [__filename]
+    }
+  }
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJtb2R1bGUiLCJleHBvcnRzIiwiY2FjaGUiLCJ0eXBlIiwiYnVpbGREZXBlbmRlbmNpZXMiLCJjb25maWciLCJfX2ZpbGVuYW1lIl0sInNvdXJjZXMiOlsiLi4vLi4vc3JjL3dlYnBhY2svd2VicGFjay5jYWNoZS5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHtcbiAgY2FjaGU6IHtcbiAgICAvLyBzdHJpbmc6ICdtZW1vcnknIHwgJ2ZpbGVzeXN0ZW0nXG4gICAgLy8g6YWN572u5ZOq56eN57G75Z6L5Y+W5Yaz5LqO6aG555uu6KeE5qih77yMbWVtb3J55a+55LqOwrfop4TmqKHlsI/nmoTpobnnm67Ct+aIluiAheWcqMK35byA5Y+R6Zi25q61wrfmnInkvJjlir9cbiAgICB0eXBlOiBcImZpbGVzeXN0ZW1cIixcbiAgICBidWlsZERlcGVuZGVuY2llczoge1xuICAgICAgLy8g5b2TV2VicGFjayDphY3nva7mlofku7blj5HnlJ/lj5jljJbml7bvvIzkvb/nvJPlrZjkvJrlpLHmlYjvvIxXZWJwYWNr6YeN5paw5p6E5bu6XG4gICAgICBjb25maWc6IFtfX2ZpbGVuYW1lXSxcbiAgICB9LFxuICB9LFxufTtcbiJdLCJtYXBwaW5ncyI6Ijs7QUFBQUEsTUFBTSxDQUFDQyxPQUFPLEdBQUc7RUFDZkMsS0FBSyxFQUFFO0lBQ0w7SUFDQTtJQUNBQyxJQUFJLEVBQUUsWUFBWTtJQUNsQkMsaUJBQWlCLEVBQUU7TUFDakI7TUFDQUMsTUFBTSxFQUFFLENBQUNDLFVBQVU7SUFDckI7RUFDRjtBQUNGLENBQUMiLCJpZ25vcmVMaXN0IjpbXX0=

@@ -5,6 +5,7 @@ import output from "./webpack.output";
 import optimization from "./webpack.optimization"; // for production
 import style from "./webpack.style";
 import cache from "./webpack.cache";
+import other from "./webpack.other"
 import fallback from "./webpack.fallback";
 import polyfill from "./webpack.polyfill";
 import { requireWebpackConfig } from "@kwok/utils";
@@ -16,6 +17,7 @@ export function devCompiler() {
     cache,
     output,
     polyfill,
+    other,
     fallback,
     requireWebpackConfig().default
   );

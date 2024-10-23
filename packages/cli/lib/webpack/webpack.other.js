@@ -1,0 +1,11 @@
+"use strict";
+
+module.exports = {
+  // 控制日志输出 https://webpack.docschina.org/configuration/other-options/#infrastructurelogging
+  infrastructureLogging: {
+    appendOnly: true,
+    colors: true,
+    level: 'info'
+  }
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJtb2R1bGUiLCJleHBvcnRzIiwiaW5mcmFzdHJ1Y3R1cmVMb2dnaW5nIiwiYXBwZW5kT25seSIsImNvbG9ycyIsImxldmVsIl0sInNvdXJjZXMiOlsiLi4vLi4vc3JjL3dlYnBhY2svd2VicGFjay5vdGhlci5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHtcbiAgLy8g5o6n5Yi25pel5b+X6L6T5Ye6IGh0dHBzOi8vd2VicGFjay5kb2NzY2hpbmEub3JnL2NvbmZpZ3VyYXRpb24vb3RoZXItb3B0aW9ucy8jaW5mcmFzdHJ1Y3R1cmVsb2dnaW5nXG4gIGluZnJhc3RydWN0dXJlTG9nZ2luZzoge1xuICAgIGFwcGVuZE9ubHk6IHRydWUsXG4gICAgY29sb3JzOiB0cnVlLFxuICAgIGxldmVsOiAnaW5mbycsXG4gIH1cbn07XG4iXSwibWFwcGluZ3MiOiI7O0FBQUFBLE1BQU0sQ0FBQ0MsT0FBTyxHQUFHO0VBQ2Y7RUFDQUMscUJBQXFCLEVBQUU7SUFDckJDLFVBQVUsRUFBRSxJQUFJO0lBQ2hCQyxNQUFNLEVBQUUsSUFBSTtJQUNaQyxLQUFLLEVBQUU7RUFDVDtBQUNGLENBQUMiLCJpZ25vcmVMaXN0IjpbXX0=
