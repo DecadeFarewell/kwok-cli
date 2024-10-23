@@ -1,5 +1,8 @@
+import merge from './merge'
+import configBase from './babel.config.base'
+import configImport from './babel.config.import'
 
-function registerBabel() {
+export function registerBabel() {
   require('@babel/register')({
     // 支持在node环境下使用 ES6+ 语法
     presets: ['@babel/preset-env'],
@@ -8,6 +11,28 @@ function registerBabel() {
   });
 }
 
-export {
-  registerBabel
+function getFrameWorkConfig() {
+  let config = {};
+
+  try {
+    const { babelConfig } = require("@fdd/vue2.7");
+
+    config = babelConfig();
+  } catch (error) {}
+
+  try {
+    const { babelConfig } = require("@fdd/vue3");
+
+    config = babelConfig();
+  } catch (error) {}
+
+  if(Object.keys(config).length === 0) { 
+    console.log('Cannot find module "@fdd/vue3" or "@fdd/vue2" in package.json')
+  }
+
+  return config;
+}
+
+export function babelOptionWebpack() {
+  return merge(configBase, configImport)
 }

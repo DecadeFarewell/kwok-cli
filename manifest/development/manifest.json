@@ -1,10 +1,10 @@
 {
   "main.css": {
-    "src": "/dist/kwok-cli-project/af1460b31fea476dab8f0b7e93984453/main.css",
+    "src": "/dist/kwok-cli-project/d546774bea1d48d3b12eec955b2b5adb/main.css",
     "integrity": "sha384-LBa7V3x7Z1sadEWXrT5/yfyqud+fNhv7bdkI7LFBPhe4h/2hgh5P75ISsjvzVXj1"
   },
   "main.js": {
-    "src": "/dist/kwok-cli-project/af1460b31fea476dab8f0b7e93984453/main.js",
+    "src": "/dist/kwok-cli-project/d546774bea1d48d3b12eec955b2b5adb/main.js",
     "integrity": "sha384-iSPR0mVkxx+ErYTb3E0x9ESa6yNQ6DEzlSzdszJKlfb8jX7LuB+IyXveoh8i4pxL"
   }
 }
