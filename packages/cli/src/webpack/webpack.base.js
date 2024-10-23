@@ -1,22 +1,37 @@
 import path from 'path'
 import webpack from "webpack";
-// FIXME: 为什么这里的导入会报错不允许使用import，难道是因为是在webpack配置文件的原因
+import cliProgress from 'cli-progress';
 import { cwdPath, outputPath } from "@kwok/utils";
 
-const handler = (percentage, message, ...args) => {
-  // e.g. Output each progress message directly to the console:
-  console.info(percentage);
-};
-
+const cliProgressBar = new cliProgress.Bar(
+  {
+    // clearOnComplete: true,
+    stopOnComplete: true,
+    linewrap: true,
+    hideCursor: true,
+  },
+  {
+    format:
+      "@kwok webpack progress [{bar}] {percentage}% | ETA: {eta}s | {text}",
+    barCompleteChar: "=",
+    barIncompleteChar: "-",
+  }
+);
+function handler(percentage, ...args) {
+  if (!cliProgressBar.isActive) {
+    cliProgressBar.start(1, 0);
+  }
+  cliProgressBar.update(percentage, { text: args.join(" ") });
+}
 
 export default {
   mode: process.env.NODE_ENV === "development" ? "development" : "production",
-  // context: cwdPath,
+  context: cwdPath,
   context: process.cwd(),
   entry: './src/client/index.js',
   output: {
     filename: 'bundle.js',
-    path: '/dist',
+    path: outputPath,
     clean: true, // 每次构建前清空 output.path 指定的文件夹内容
   },
   module: {
