@@ -1,6 +1,14 @@
 {
   "main.js": {
-    "src": "/dist/kwok-cli-project/d7fa471938194890ae53958a3490a3c9/bundle.js",
-    "integrity": "sha384-Uy+KPTRs2m/Wy8W1Az3l2WMUA77bQj9lhsP+MjMywcjM63Ta99Rk/YQx92O3+ols"
+    "src": "/dist/kwok-cli-project/6693bdacad2d4599814ad6c49b18d15e/main.js",
+    "integrity": "sha384-QH9sYXTDlpuiE9XrU5Ec0Sb6bDkwPW85WnAkbvr2MPJJa29ZQZVmZxlwGuagPumh"
+  },
+  "runtime.js": {
+    "src": "/dist/kwok-cli-project/6693bdacad2d4599814ad6c49b18d15e/runtime.js",
+    "integrity": "sha384-3WMT8pH5r7xB349Ulu6cvdkOyeCx50aK2ETF87oUw0RANLeTrHqQDN0X/yUeQ5Iv"
+  },
+  "vendors.js": {
+    "src": "/dist/kwok-cli-project/6693bdacad2d4599814ad6c49b18d15e/vendors.js",
+    "integrity": "sha384-Z4tRyq7xQMzn94QT69y33lGusJ7hGzWW1sS8rIQ2KsYo6l0bc7/mZhpTzCEtdTIT"
   }
 }

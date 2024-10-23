@@ -7,7 +7,6 @@ export default {
   output: {
     path: outputPath,
     publicPath: 'auto',
-    // todo: filename？？
     clean: false, // 每次构建前是否清空 output.path 文件夹内容
     crossOriginLoading: "anonymous", // 通过使用 JSONP 来添加脚本标签，实现按需加载模块，anonymous： 不带凭据(credential) 启用跨域加载，
     chunkLoadingGlobal: "Kwok", // 定义一个全局的变量，用于chunk的加载（// note: 暂时没发现有什么应用场景）
