@@ -25,7 +25,6 @@ function handler(percentage, ...args) {
 
 export default {
   mode: process.env.NODE_ENV === "development" ? "development" : "production",
-  entry: './src/client/index.js',
   module: {
     rules: [
       {

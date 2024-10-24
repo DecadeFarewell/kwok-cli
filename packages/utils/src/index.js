@@ -18,15 +18,17 @@ export const pkg = require(path.resolve("./package.json"));
 
 // webpack config
 export function requireWebpackConfig() {
-  const webpackConfigPath = "./src/webpack.config";
+  const webpackConfigPath = "./src/webpack.config.js";
 
-  if (fs.existsSync(path.resolve(webpackConfigPath))) {
-    return interopRequireDefault(require(path.resolve(webpackConfigPath)));
+  try {
+    if (fs.existsSync(path.resolve(webpackConfigPath))) {
+      return interopRequireDefault(require(path.resolve(webpackConfigPath)));
+    } else {
+      throw new Error(`webpack.config is Not Found in ${webpackConfigPath}`)
+    }
+  } catch (error) {
+    console.log('error: ', error);
   }
-
-  return {
-    default: {}
-  };
 }
 
 // 当前工作目录的绝对路径

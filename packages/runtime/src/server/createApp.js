@@ -1,6 +1,7 @@
 import express from "express";
 import http from "http";
-import { pkg } from "@kwok/utils";
+import path from "path";
+import { pkg, publicPath } from "@kwok/utils";
 import middlewarePing from "../middlewares/middleware-ping";
 import middlewareDevWebpack from "../middlewares/middleware-dev-webpack";
 import middlewareRender from "../middlewares/middleware-render";

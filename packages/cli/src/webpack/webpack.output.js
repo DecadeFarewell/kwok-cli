@@ -1,12 +1,20 @@
 import WebpackAssetsfestPlugin from "webpack-assets-manifest";
-import { cwdPath, outputPath, publicPath, outputManifestPath } from "@kwok/utils";
+import {
+  cwdPath,
+  outputPath,
+  publicPath,
+  outputManifestPath,
+} from "@kwok/utils";
+import HtmlWebpackPlugin from "html-webpack-plugin";
+import path from "path";
 
 export default {
   context: cwdPath, // 基础目录，绝对路径，用于从配置中解析入口点(entry point)和 加载器(loader)
   target: ["web", "es5"],
   output: {
     path: outputPath,
-    publicPath: 'auto',
+    // publicPath: "auto",
+    publicPath,
     clean: false, // 每次构建前是否清空 output.path 文件夹内容
     crossOriginLoading: "anonymous", // 通过使用 JSONP 来添加脚本标签，实现按需加载模块，anonymous： 不带凭据(credential) 启用跨域加载，
     chunkLoadingGlobal: "Kwok", // 定义一个全局的变量，用于chunk的加载（// note: 暂时没发现有什么应用场景）
@@ -27,5 +35,9 @@ export default {
         );
       },
     }),
-  ]
-}
+
+    new HtmlWebpackPlugin({
+      template: path.resolve("/src/views/index.html"),
+    }),
+  ],
+};
