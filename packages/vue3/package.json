@@ -12,10 +12,11 @@
     "@vue/babel-plugin-jsx": "^1.2.5",
     "unplugin-vue-setup-extend-plus": "^1.0.1",
     "vue-loader": "^17.4.2",
-    "vue-svg-loader": "^0.16.0"
+    "vue-svg-loader": "^0.17.0-beta.2"
   },
   "peerDependencies": {
     "vue": ">=3.2.31",
     "vue-router": ">=4.0.13"
-  }
+  },
+  "devDependencies": {}
 }

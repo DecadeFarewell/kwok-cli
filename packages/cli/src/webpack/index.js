@@ -42,6 +42,7 @@ export function devCompiler() {
     getFrameWorkConfig(),
     style(),
     cache,
+    optimization,
     output,
     polyfill,
     other,
