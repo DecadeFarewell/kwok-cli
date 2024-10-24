@@ -24,7 +24,10 @@ function getFrameWorkConfig() {
     const { babelConfig } = require("@kwok/vue3");
 
     config = babelConfig();
-  } catch (error) {}
+  } catch (error) {
+    console.log('error: ', error);
+
+  }
 
   if(Object.keys(config).length === 0) { 
     console.log('Cannot find module "@kwok/vue3" in package.json')

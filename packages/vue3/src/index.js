@@ -1,2 +1,8 @@
-export webpackConfig from './webpack'
-export babelConfig from './babel'
+import webpackConfig from './webpack'
+
+import babelConfig from './babel'
+
+export {
+  webpackConfig,
+  babelConfig
+}

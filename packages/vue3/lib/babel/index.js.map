@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","names":["babelConfig","plugins"],"sources":["../../src/babel/index.js"],"sourcesContent":["// 基础配置\nexport default function babelConfig() {\n  return {\n    plugins: [\"@vue/babel-plugin-jsx\"]\n  };\n}"],"mappings":";;;;;;AAAA;AACe,SAASA,WAAWA,CAAA,EAAG;EACpC,OAAO;IACLC,OAAO,EAAE,CAAC,uBAAuB;EACnC,CAAC;AACH","ignoreList":[]}

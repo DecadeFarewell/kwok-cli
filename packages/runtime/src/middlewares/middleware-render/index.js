@@ -1,16 +1,13 @@
-export default function RenderMiddleware(view = "index.html") {
+export default function RenderMiddleware(htmlTemplate = "index.html") {
   return [
     (req, res, next) => {
-      // eslint-disable-next-line
       require('./variableMiddleware').default(req, res, next);
     },
     (req, res, next) => {
-      // eslint-disable-next-line
       require('./manifestMiddleware').default(req, res, next);
     },
     (req, res, next) => {
-      // eslint-disable-next-line
-      require('./HtmlMiddleware').default(view)(req, res, next);
+      require('./htmlMiddleware').default(htmlTemplate)(req, res, next);
     },
   ];
 }

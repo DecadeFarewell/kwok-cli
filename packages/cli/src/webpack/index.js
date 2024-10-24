@@ -24,7 +24,9 @@ function getFrameWorkConfig() {
     const { webpackConfig } = require("@kwok/vue3");
 
     config = webpackConfig();
-  } catch (error) {}
+  } catch (error) {
+    console.log('error: ', error);
+  }
 
   if(Object.keys(config).length === 0) { 
     console.log('Cannot find module "@kwok/vue3" in package.json')

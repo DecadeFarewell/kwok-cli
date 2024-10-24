@@ -4,6 +4,7 @@ import App from './App.vue';
 // import 'element-plus/dist/index.css'
 
 const app = createApp(App)
+console.log('app: ===', app);
 
 // app.use(ElementPlus)
 app.mount('#app');
