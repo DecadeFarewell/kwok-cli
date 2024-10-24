@@ -5,13 +5,13 @@
         "css": [
           {
             "src": "/dist/kwok-cli-project/37310767dcae4988b73979ac2ca23bba/main.css",
-            "integrity": "sha384-1lhmGcm+hutkYkG+EgQviXB4K9eujRgLdWfDSxZqJHHeI1RLDL8w4FAtXm8tZpYH"
+            "integrity": "sha384-wTgwwSB8SnzfstxDZAsjdeVQPHG2CtUCNClux6ut5Y+7cnvLUZXLyF8sq2mE3Bdw"
           }
         ],
         "js": [
           {
             "src": "/dist/kwok-cli-project/37310767dcae4988b73979ac2ca23bba/main.js",
-            "integrity": "sha384-ywJL+CjiVAJd+rfzIqRZ2R9iNCWCKezJ2o74NU7orrPASFlB2WNyTT/vaLSLCUhS"
+            "integrity": "sha384-WBkh2CN2rvk6t59of1wqwY2ZrqjMf4Lk8c3PtYMWOIr2JJX2WW9rLJj30nrlMJmd"
           }
         ]
       }
@@ -21,24 +21,24 @@
     "src": "/dist/kwok-cli-project/37310767dcae4988b73979ac2ca23bba/index.html",
     "integrity": "sha384-ocypTSIsWXmT0nUoavxHbVLPmXzcT+gxbxPxLZqzmFH+0h9K4kp1DXjaOwVCKh7K"
   },
-  "main.a714738849c8f69a88dc.hot-update.js.map": {
-    "src": "/dist/kwok-cli-project/37310767dcae4988b73979ac2ca23bba/main.a714738849c8f69a88dc.hot-update.js.map",
-    "integrity": "sha384-brCZjDEy5nzJKy5TvPZQCD1w7Pz9GVpgqPJdx1P7CS2QNoG3+Al6yjiPrXkUGm08"
+  "main.494a99d93b0edd7c98b0.hot-update.js.map": {
+    "src": "/dist/kwok-cli-project/37310767dcae4988b73979ac2ca23bba/main.494a99d93b0edd7c98b0.hot-update.js.map",
+    "integrity": "sha384-F8BT097QthSDAB9XHC2XPm3RHdTlfuGjWzs5f5xa33PAO2z32xYckylPRwKwC/xQ"
   },
   "main.css": {
     "src": "/dist/kwok-cli-project/37310767dcae4988b73979ac2ca23bba/main.css",
-    "integrity": "sha384-1lhmGcm+hutkYkG+EgQviXB4K9eujRgLdWfDSxZqJHHeI1RLDL8w4FAtXm8tZpYH"
+    "integrity": "sha384-wTgwwSB8SnzfstxDZAsjdeVQPHG2CtUCNClux6ut5Y+7cnvLUZXLyF8sq2mE3Bdw"
   },
   "main.css.map": {
     "src": "/dist/kwok-cli-project/37310767dcae4988b73979ac2ca23bba/main.css.map",
-    "integrity": "sha384-KJMswtQeeYyboU+CiADgKpUWffyP4JboC6yv5ngdVNZcUoPM+xbskRw0nXBzL4R8"
+    "integrity": "sha384-kkbwQabmv8G7ailI0R2ZN/5d531eCTe3Eaq5yu2ak78/C623fLxgz6VvNkWs1UPL"
   },
   "main.js": {
     "src": "/dist/kwok-cli-project/37310767dcae4988b73979ac2ca23bba/main.js",
-    "integrity": "sha384-ywJL+CjiVAJd+rfzIqRZ2R9iNCWCKezJ2o74NU7orrPASFlB2WNyTT/vaLSLCUhS"
+    "integrity": "sha384-WBkh2CN2rvk6t59of1wqwY2ZrqjMf4Lk8c3PtYMWOIr2JJX2WW9rLJj30nrlMJmd"
   },
   "main.js.map": {
     "src": "/dist/kwok-cli-project/37310767dcae4988b73979ac2ca23bba/main.js.map",
-    "integrity": "sha384-nl4xcXO+AHCmHBOoGilOPRIuLaN7iEskt26K1ViARlDiJGg/mR3Kx4XT5BJZjQ1H"
+    "integrity": "sha384-3+z3sw2fZJ9CXS5TT8BxY+hrBsSd7npCA3EQ5+qZ4NRucI+yRqA1DUzr1wzF3K/8"
   }
 }
