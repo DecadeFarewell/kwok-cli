@@ -1,3 +1,3 @@
 export default {
-  entry: ['./src/client/main.js']
+  entry: ['./src/client/main.ts']
 }
