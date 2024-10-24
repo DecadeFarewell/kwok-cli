@@ -47,7 +47,6 @@ export default function () {
           test: /\.(css|sass|scss)$/,
           oneOf: [
             {
-              // svg vue 组件化
               resourceQuery: /module=true/,
               use: cssLoader(false, true),
             },
