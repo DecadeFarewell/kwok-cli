@@ -7,5 +7,5 @@ import 'element-plus/dist/index.css'
 const app = createApp(App)
 console.log('app: ===12', app);
 
-// app.use(ElementPlus)
+app.use(ElementPlus)
 app.mount('#app');

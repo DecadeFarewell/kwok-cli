@@ -1,6 +1,7 @@
 import merge from './merge'
 import configBase from './babel.config.base'
 import configImport from './babel.config.import'
+import configWebpack from './babel.config.webpack'
 
 export function registerBabel() {
   require('@babel/register')({
@@ -36,6 +37,10 @@ function getFrameWorkConfig() {
   return config;
 }
 
-export function babelOptionWebpack() {
+export function babelOptionWebpackDev() {
   return merge(configBase, getFrameWorkConfig(), configImport)
+}
+
+export function babelOptionWebpackProd() {
+  return merge(configBase, getFrameWorkConfig(), configImport, configWebpack)
 }
