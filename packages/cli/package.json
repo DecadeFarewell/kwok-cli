@@ -8,6 +8,7 @@
   },
   "bin": {
     "kwok-dev": "./bin/kwok-dev.js",
+    "kwok-deploy": "./bin/kwok-deploy.js",
     "kwok-build": "./bin/kwok-build.js"
   },
   "author": "",

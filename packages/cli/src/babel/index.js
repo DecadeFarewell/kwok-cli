@@ -1,5 +1,7 @@
 import merge from './merge'
+import babelDir from "@babel/cli/lib/babel/dir";
 import configBase from './babel.config.base'
+import configNodeLib from './babel.config.node.lib'
 import configImport from './babel.config.import'
 import configWebpack from './babel.config.webpack'
 
@@ -10,6 +12,31 @@ export function registerBabel() {
     // 支持导出默认值，如 export a from 'b'
     plugins: ["@babel/plugin-proposal-export-default-from"]
   });
+}
+
+// todo: build es
+export function buildEs() {
+}
+
+// build lib
+export function buildLib() {
+  const babelOptions = merge(configBase, configNodeLib)
+
+  const cliOptions = {
+    outDir: "lib",
+    filenames: ["src"],
+    extensions: [".ts", ".tsx", ".js", ".jsx"], // json 不需要编译
+    keepFileExtension: false, // 是否保留扩展名，.ts -> .js
+    verbose: true, // 输出提示
+    watch: null,
+    relative: null,
+    copyFiles: true, // 不编译的文件 copy
+    copyIgnored: true, // 排除的文件 copy
+    includeDotfiles: true,
+    skipInitialBuild: null,
+  }
+
+  return babelDir({ cliOptions, babelOptions })
 }
 
 function getFrameWorkConfig() {

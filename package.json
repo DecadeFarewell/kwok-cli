@@ -6,7 +6,8 @@
     "port": 5566
   },
   "scripts": {
-    "dev": "kwok-dev"
+    "dev": "kwok-dev",
+    "deploy": "kwok-deploy"
   },
   "workspaces": [
     "packages/*"

@@ -1,0 +1,1 @@
+{"version":3,"file":"math.js","names":["add","a","b","exports"],"sources":["../../../src/client/utils/math.ts"],"sourcesContent":["export const add = (a: number, b: number) => a + b"],"mappings":";;;;;;AAAO,MAAMA,GAAG,GAAGA,CAACC,CAAS,EAAEC,CAAS,KAAKD,CAAC,GAAGC,CAAC;AAAAC,OAAA,CAAAH,GAAA,GAAAA,GAAA","ignoreList":[]}
