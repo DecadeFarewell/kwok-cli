@@ -49,7 +49,7 @@ export const basePath = `dist/${packageName}/${uuid}`;
 export const publicPath = `/${basePath}/`;
 
 // 静态资源输出文件路径
-export const outputPath = `/${basePath}/`;
+export const outputPath = path.resolve(basePath);
 
 // manifest输出路径
 export const outputManifestPath = path.resolve(
