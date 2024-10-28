@@ -4,29 +4,53 @@
       "assets": {
         "css": [
           {
-            "src": "/dist/kwok-cli-project/acafdb53385642219517770cfdcbf28f/main.css",
+            "src": "/dist/kwok-cli-project/5de191818a6b47eabffc36eacf61fb8c/main.css",
             "integrity": "sha384-FrVJqQDC/PcErVFRqMGajk3TWvPBRRlASEbcaCQI9khtoka27MNwUSFwzf7kzFjJ"
           }
         ],
         "js": [
           {
-            "src": "/dist/kwok-cli-project/acafdb53385642219517770cfdcbf28f/main.js",
-            "integrity": "sha384-HDfPE2E3YMpiav6g6rH6NnaaNbjuVXnNEBT6ClnT9P47AOP/stJVxqy8mXPYAQQA"
+            "src": "/dist/kwok-cli-project/5de191818a6b47eabffc36eacf61fb8c/main.js",
+            "integrity": "sha384-P2vNZzKStNFd93/DZzW1ppsMQq+82IFEPdYOKrnsbwudQ7lMp69+Z/TGmzB6ITwc"
+          }
+        ]
+      },
+      "prefetch": {
+        "js": [
+          {
+            "src": "/dist/kwok-cli-project/5de191818a6b47eabffc36eacf61fb8c/src_client_components_Prefetch_source_prefetch-source_js.js",
+            "integrity": "sha384-mNXjkag7fk0kMXQmmNOBVB3ma9l3YcUrvTcRdSn/ArH8ZY0CQ9QqykE5aerOBkEY"
+          }
+        ]
+      },
+      "preload": {
+        "js": [
+          {
+            "src": "/dist/kwok-cli-project/5de191818a6b47eabffc36eacf61fb8c/src_client_components_Prefetch_source_preload-source_js.js",
+            "integrity": "sha384-+aJPcwpGATo8H0zNt5jyQ/8Ol4NIlqARV+hUC4sv+QLdtFtUYxosUJWfqHKo+J7F"
           }
         ]
       }
     }
   },
   "index.html": {
-    "src": "/dist/kwok-cli-project/acafdb53385642219517770cfdcbf28f/index.html",
-    "integrity": "sha384-w286sjY7fFw/9ny7DyKEB5fmdBFRjIikhGsnycAhJL8UE2L533mGHA37upoBuHFq"
+    "src": "/dist/kwok-cli-project/5de191818a6b47eabffc36eacf61fb8c/index.html",
+    "integrity": "sha384-yZ5BSMT/5VhOL3OLhv7U3Ov71L3HehdcTJe0hkkTg1D5IcLLKyFHYFw7oymjy520"
   },
   "main.css": {
-    "src": "/dist/kwok-cli-project/acafdb53385642219517770cfdcbf28f/main.css",
+    "src": "/dist/kwok-cli-project/5de191818a6b47eabffc36eacf61fb8c/main.css",
     "integrity": "sha384-FrVJqQDC/PcErVFRqMGajk3TWvPBRRlASEbcaCQI9khtoka27MNwUSFwzf7kzFjJ"
   },
   "main.js": {
-    "src": "/dist/kwok-cli-project/acafdb53385642219517770cfdcbf28f/main.js",
-    "integrity": "sha384-HDfPE2E3YMpiav6g6rH6NnaaNbjuVXnNEBT6ClnT9P47AOP/stJVxqy8mXPYAQQA"
+    "src": "/dist/kwok-cli-project/5de191818a6b47eabffc36eacf61fb8c/main.js",
+    "integrity": "sha384-P2vNZzKStNFd93/DZzW1ppsMQq+82IFEPdYOKrnsbwudQ7lMp69+Z/TGmzB6ITwc"
+  },
+  "src_client_components_Prefetch_source_prefetch-source_js.js": {
+    "src": "/dist/kwok-cli-project/5de191818a6b47eabffc36eacf61fb8c/src_client_components_Prefetch_source_prefetch-source_js.js",
+    "integrity": "sha384-mNXjkag7fk0kMXQmmNOBVB3ma9l3YcUrvTcRdSn/ArH8ZY0CQ9QqykE5aerOBkEY"
+  },
+  "src_client_components_Prefetch_source_preload-source_js.js": {
+    "src": "/dist/kwok-cli-project/5de191818a6b47eabffc36eacf61fb8c/src_client_components_Prefetch_source_preload-source_js.js",
+    "integrity": "sha384-+aJPcwpGATo8H0zNt5jyQ/8Ol4NIlqARV+hUC4sv+QLdtFtUYxosUJWfqHKo+J7F"
   }
 }

@@ -5,6 +5,8 @@
 
   <Todo />
 
+  <Prefetch />
+
   <h3>{{ count }}</h3>
 
 
@@ -15,6 +17,7 @@
 import { ref } from "vue";
 import BaseSvg from "@/assets/image/base.svg";
 import Todo from "@/components/Todo.vue";
+import Prefetch from "@/components/Prefetch/index.vue";
 import { add } from "@/utils/math";
 import { ElButton } from "element-plus"
 
