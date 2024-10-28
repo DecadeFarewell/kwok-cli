@@ -30,8 +30,8 @@ export function buildLib() {
     verbose: true, // 输出提示
     watch: null,
     relative: null,
-    copyFiles: true, // 不编译的文件 copy
-    copyIgnored: true, // 排除的文件 copy
+    copyFiles: true, // 复制不编译的文件， 否则编译后将缺失不编译的文件
+    copyIgnored: true, // 复制忽略的文件， 否则编译后将缺失忽略的文件
     includeDotfiles: true,
     skipInitialBuild: null,
   }
