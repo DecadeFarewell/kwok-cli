@@ -12,6 +12,7 @@
     "@kwok/cli": "1.0.0",
     "@kwok/utils": "1.0.0",
     "express": "^5.0.0-beta.2",
+    "open": "^10.1.0",
     "webpack-dev-middleware": "^7.4.2",
     "webpack-hot-middleware": "^2.26.1"
   }

@@ -1,6 +1,6 @@
-import express from "express";
 import http from "http";
 import path from "path";
+import express from 'express';
 import { pkg, publicPath } from "@kwok/utils";
 import middlewarePing from "../middlewares/middleware-ping";
 import middlewareDevWebpack from "../middlewares/middleware-dev-webpack";
@@ -24,6 +24,11 @@ export default function createApp() {
       if (err) throw err;
       // console.clear()
       console.log(`\nListening at http://localhost:${port}\n`);
+
+      // todo: 不顶用？
+      // import("open").then(module => {
+      //   module.default("https://github.com/sindresorhus/open")
+      // })
     });
   };
 

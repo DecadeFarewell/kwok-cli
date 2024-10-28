@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "config": {
-    "port": 5566
+    "port": 5566,
+    "open": true
   },
   "scripts": {
     "dev": "kwok-dev",

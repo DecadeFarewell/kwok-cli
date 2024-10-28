@@ -4,29 +4,29 @@
       "assets": {
         "css": [
           {
-            "src": "/dist/kwok-cli-project/149e5be3a8c14923944ab6cf3526ca23/main.css",
+            "src": "/dist/kwok-cli-project/acafdb53385642219517770cfdcbf28f/main.css",
             "integrity": "sha384-FrVJqQDC/PcErVFRqMGajk3TWvPBRRlASEbcaCQI9khtoka27MNwUSFwzf7kzFjJ"
           }
         ],
         "js": [
           {
-            "src": "/dist/kwok-cli-project/149e5be3a8c14923944ab6cf3526ca23/main.js",
-            "integrity": "sha384-/sLxCEqe6Q885HS49odhMuGVaSwJvCuLgYR15Gp6qC8ubjYmL2usoeL+A4QBTF29"
+            "src": "/dist/kwok-cli-project/acafdb53385642219517770cfdcbf28f/main.js",
+            "integrity": "sha384-HDfPE2E3YMpiav6g6rH6NnaaNbjuVXnNEBT6ClnT9P47AOP/stJVxqy8mXPYAQQA"
           }
         ]
       }
     }
   },
   "index.html": {
-    "src": "/dist/kwok-cli-project/149e5be3a8c14923944ab6cf3526ca23/index.html",
-    "integrity": "sha384-gto2p8Gm53toO/CpTGaDa2gx1Zv/fcuLWDUhEyyTLPH6wlyYQvFf4FsHNEqhf3gZ"
+    "src": "/dist/kwok-cli-project/acafdb53385642219517770cfdcbf28f/index.html",
+    "integrity": "sha384-w286sjY7fFw/9ny7DyKEB5fmdBFRjIikhGsnycAhJL8UE2L533mGHA37upoBuHFq"
   },
   "main.css": {
-    "src": "/dist/kwok-cli-project/149e5be3a8c14923944ab6cf3526ca23/main.css",
+    "src": "/dist/kwok-cli-project/acafdb53385642219517770cfdcbf28f/main.css",
     "integrity": "sha384-FrVJqQDC/PcErVFRqMGajk3TWvPBRRlASEbcaCQI9khtoka27MNwUSFwzf7kzFjJ"
   },
   "main.js": {
-    "src": "/dist/kwok-cli-project/149e5be3a8c14923944ab6cf3526ca23/main.js",
-    "integrity": "sha384-/sLxCEqe6Q885HS49odhMuGVaSwJvCuLgYR15Gp6qC8ubjYmL2usoeL+A4QBTF29"
+    "src": "/dist/kwok-cli-project/acafdb53385642219517770cfdcbf28f/main.js",
+    "integrity": "sha384-HDfPE2E3YMpiav6g6rH6NnaaNbjuVXnNEBT6ClnT9P47AOP/stJVxqy8mXPYAQQA"
   }
 }
