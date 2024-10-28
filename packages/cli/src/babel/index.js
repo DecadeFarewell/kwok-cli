@@ -1,6 +1,7 @@
 import merge from './merge'
 import babelDir from "@babel/cli/lib/babel/dir";
 import configBase from './babel.config.base'
+import configNodeEs from './babel.config.node.es'
 import configNodeLib from './babel.config.node.lib'
 import configImport from './babel.config.import'
 import configWebpack from './babel.config.webpack'
@@ -14,8 +15,26 @@ export function registerBabel() {
   });
 }
 
-// todo: build es
+// build es
 export function buildEs() {
+  const babelOptions = merge(configBase, configImport, configNodeEs)
+
+  const cliOptions = {
+    outDir: "es",
+    filenames: ["src"],
+    extensions: [".ts", ".tsx", ".js", ".jsx"], // json 不需要编译
+    keepFileExtension: false, // 是否保留扩展名，.ts -> .js
+    verbose: true, // 输出提示
+    watch: null,
+    relative: null,
+    copyFiles: true, // 复制不编译的文件， 否则编译后将缺失不编译的文件
+    copyIgnored: true, // 复制忽略的文件， 否则编译后将缺失忽略的文件
+    includeDotfiles: true,
+    skipInitialBuild: null,
+  };
+
+  return babelDir({ cliOptions, babelOptions });
+
 }
 
 // build lib
