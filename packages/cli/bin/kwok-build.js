@@ -3,7 +3,7 @@
 const { buildEs, buildLib } = require('@kwok/cli');
 
 Promise.all([
-  buildEs(),
+  // buildEs(),
   buildLib(),
 ]).catch((error)=>{
   process.exitCode = 1;

@@ -1,0 +1,16 @@
+{
+  "name": "@kwok/react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "kwok-build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-react": "^7.25.9",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
+    "react-refresh": "^0.14.2"
+  }
+}
