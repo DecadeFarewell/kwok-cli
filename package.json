@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "kwok-dev",
+    "build": "kwok-build",
     "deploy": "kwok-deploy"
   },
   "workspaces": [
