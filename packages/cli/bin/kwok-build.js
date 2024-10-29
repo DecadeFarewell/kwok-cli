@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const { buildEs, buildLib } = require('@fdd/cli');
+const { buildEs, buildLib } = require('@kwok/cli');
 
 Promise.all([
   buildEs(),
