@@ -21,6 +21,7 @@ export default function HtmlMiddleware(htmlTemplate) {
       res.location(req.reactContext?.url);
       res.end();
     } else {
+      // req.manifestContext 经过插件处理，包含了manifest.json中的资源的映射信息
       const css = req.manifestContext.css.map(
         (item) =>
           `<link rel="stylesheet" crossorigin='anonymous' href="${urlPrefix}${item.src}">`
